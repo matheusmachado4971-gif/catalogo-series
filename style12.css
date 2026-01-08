@@ -1,0 +1,243 @@
+* {
+    margin: 0;/*remover margens automaticas*/
+    padding: 0;/*remover espaçamento internos*/
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: #fff
+}
+
+
+/* Centralizar conteudo em uma largura */
+.container{
+    width: 90%;/* ocupa 90% da tela*/
+    max-width: 1000px;/* limita em tela grande*/
+    margin: 0 auto;/* centralizado na horizontal*/
+}
+header{
+    background-color: black;
+    color: #E50914;
+    padding: 15px 0;
+}
+
+
+/*Cabeçalho*/
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 32px;
+}
+
+
+/*Menu*/
+
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+.menu a {
+    color: #E50914;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/*secao destaque*/
+.destaque {
+    background-image: url("https://m.media-amazon.com/images/I/81dfr9S4uLL._AC_UF1000,1000_QL80_.jpg");
+    background-size: cover;
+    background-position: center;
+
+    min-height: 80vh; /* ocupa boa parte da tela */
+    display: flex;
+    position: relative;
+    color: #fff;
+    
+}
+.destaque::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+}
+.destaque .container {
+    position: relative;
+    z-index: 1;
+}
+
+.destaque-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+ 
+.destaque-texto h2 {
+    font-size: 40px;
+}
+ 
+.destaque-texto p {
+    max-width: 600px;
+    line-height: 1.6;
+}
+ 
+.destaque-imagem img {
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+
+ /*Filtros*/
+ .filtros {
+    display: flex;
+    gap: 10px;
+}
+ 
+.filtro {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--cor-branca);
+    color: var(--cor-primaria);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px #fff;
+}
+ 
+.filtro:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branca);
+}
+
+
+/*Seção*/
+.secao{
+    padding: 40px 0;
+}
+.secao-cinza{
+    background-color: black;
+}
+.secao h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/*catalogo das series*/
+.grid-series {
+    display: flex;
+    padding: 30px 0;
+    gap: 30px;
+    animation-direction: reverse;
+    animation: slide-series 5s linear infinite;
+}
+/*passar o mouse ele para*/
+.grid-series:hover {
+    animation-play-state: paused;
+}
+/*so mostrar a faixa visivel*/
+.carrossel-series{
+    overflow: hidden;
+}
+/*so mostrar a faixa visivel*/
+ @keyframes slide-series {
+    0%{
+        transform: translatex(-50%);
+    }
+    100%{
+        transform: translatex(0);
+    }
+ }
+.card-serie {
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px #fff;
+    transition: transform 0.3s;
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    min-width: 180px;
+    overflow: hidden;
+}
+.card-serie video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+.card-serie:hover video {
+    opacity: 1;
+}
+
+.card-serie:hover img {
+    opacity: 0;
+}
+ 
+.card-serie:hover {
+    transform: translateY(-5px);
+}
+ 
+.card-serie img {
+    width: 150px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+ 
+.card-serie h3 {
+    color: var(--cor-primaria);
+}
+ 
+.genero {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+ 
+.descricao {
+    font-size: 14px;
+    color: #555;
+    opacity: 0;                 /* escondido */
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+.card-serie:hover .descricao {
+    opacity: 1;
+    max-height: 200px;          /* espaço para o texto */
+    margin-top: 10px;
+}
+
+
+
+/*Contato*/
+.lista-contato{
+    margin-top: 15px;
+    list-style: none;
+}
+.lista-contato li{
+    margin-bottom: 8px;
+}
+
+
+/*Rodapé*/
+footer{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: 20px;
+}

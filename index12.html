@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo de Séries</title>
+
+    <!-- TODO: garantir que a pasta css/ existe e o arquivo style.css também -->
+    <link rel="stylesheet" href="style12.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Maratonaplay <!-- TODO: nome do site, ex: "Séries+Tay" --></h1>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#series">Séries</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção destaque -->
+    <section id="inicio" class="secao destaque">
+        <div class="container destaque-conteudo">
+            <div class="destaque-texto">
+                <h2>Maratone Sem Limites<!-- TODO: título de destaque, ex: "Descubra novas séries para maratonar" --></h2>
+                <p>🎬 Bem-vindo ao seu próximo vício em séries!
+                    Aqui você encontra um catálogo completo com séries incríveis para todos os gostos — das mais emocionantes às mais leves para maratonar sem pressa. 
+                    Explore títulos populares, descubra novas histórias e encontre aquela série perfeita para começar hoje. Prepare a pipoca, 
+                    escolha seu favorito e dê o play na diversão!<!-- TODO: texto chamativo explicando o objetivo da página --></p><br>
+
+                <!-- Filtros visuais de gêneros (não precisam funcionar) -->
+                <div class="filtros">
+                    <!-- TODO: trocar ou adicionar gêneros -->
+                    <button class="filtro">Todos</button>
+                    <button class="filtro">Ação</button>
+                    <button class="filtro">Comédia</button>
+                    <button class="filtro">Drama</button>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- Seção catálogo de séries -->
+    <section id="series" class="secao secao-cinza">
+        <div class="container">
+            <h2>Séries em destaque</h2>
+            <div class="carrossel-series">
+                <div class="grid-series">
+                    <!-- Card 1 -->
+                    <div class="card-serie">
+                        <!-- TODO: trocar os dados da série -->
+                        <img src=https://media.fstatic.com/SuHRFyJiYtrr5tT_BtA-0vlpAgk=/350x525/smart/filters:format(webp)/media/movies/covers/2021/08/229684536_2834646936659632_4723171262666957925_n.jpg alt="Nome da série">
+                        <video class="trailer" autoplay muted loop playsinline>
+                            <source src="videoplayback.mp4" type="video/mp4">
+                        </video>
+                        <video class="trailer" muted loop autoplay></video>
+                        <h3>LA CASA DE PAPEL</h3>
+                        <p class="genero">suspense, policial e ação  <!-- ex: Ficção científica --></p>
+                        <p class="descricao">
+                            <!-- Pequena descrição da série -->
+                            é uma série espanhola de sucesso global na Netflix, criada por Álex Pina, 
+                            sobre um grupo de ladrões liderados pelo 
+                            "Professor" que planejam e executem roubos elaborados à Casa 
+                            da Moeda e ao Banco da Espanha
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card-serie">
+                        <img src=https://infinitasvidas.wordpress.com/wp-content/uploads/2020/06/peaky-blinders.png?w=640 alt="Nome da série">
+                        <video class="trailer" autoplay muted loop playsinline>
+                            <source src="pik blander.mp4" type="video/mp4">
+                        </video>
+                        <video class="trailer" muted loop autoplay></video>
+                        <h3>PEAKY BLINDERS</h3>
+                        <p class="genero">Crime, drama policial, Misterio, ação <!-- ... --></p>
+                        <p class="descricao">Peaky Blinders conta a história da ambiciosa família criminosa Shelby, liderada por Thomas "Tommy" 
+                            Shelby, em Birmingham, Inglaterra, logo após a Primeira Guerra Mundial,
+                            mostrando sua ascensão no submundo através de apostas<!-- descrição -->
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card-serie">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYmE4MmNjZjUtNTEyNy00NTZiLWE4NTktYjM2NjBhYzQ1N2IzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Nome da série">
+                        <video class="trailer" autoplay muted loop playsinline>
+                            <source src="suits.mp4" type="video/mp4">
+                        </video>
+                        <video class="trailer" muted loop autoplay></video>
+                        <h3>SUITS</h3>
+                        <p class="genero">Drama Jurídico, Comedia e Misterio <!-- ... --></p>
+                        <p class="descricao">
+                            Suits é um drama jurídico sobre Harvey Specter, um advogado de sucesso em Manhattan, que contrata o 
+                            brilhante Mike Ross, um jovem sem diploma de direito, como seu associado, 
+                            escondendo o fato de que ele não é formado.<!-- descrição -->
+                        </p>
+                    </div>
+                    <!-- card 4-->
+                    <div class="card-serie">
+                        <img src=https://br.web.img3.acsta.net/c_210_280/img/dd/b9/ddb9cc871cf3b88b5bc013b168f24831.jpg alt="Nome da série">
+                        <h3>ROUND 6</h3>
+                        <p class="genero">violencia, Misterio <!-- ... --></p>
+                        <p class="descricao">
+                            após vencer o sádico e famoso torneio, Gi-hun (Lee Jung-jae) busca vingança. Agora mais preparado, ele coloca em prática tudo o que aprendeu nos 
+                            jogos anteriores para localizar os verdadeiros responsáveis pelas tragédias que presenciou. <!-- descrição -->
+                        </p>
+                    </div>
+                    <!-- card 5-->
+                    <div class="card-serie">
+                        <img src=https://static1.purebreak.com.br/articles/9/94/66/9/@/368380--riverdale-ate-o-proprio-elenco-odeia-580x0-1.jpg alt="Nome da série">
+                        <h3>RIVERDALE</h3>
+                        <p class="genero">violencia, terror e Misterio <!-- ... --></p>
+                        <p class="descricao">
+                            Riverdale é uma série que reimagina os personagens icônicos da Archie Comics em um tom mais sombrio, explorando mistérios e 
+                            dramas adolescentes na pacata cidade de Riverdale, que é abalada pela trágica morte de Jason Blossom<!-- descrição -->
+                        </p>
+                    </div>
+                    <!-- card 6-->
+                    <div class="card-serie">
+                        <img src="https://m.media-amazon.com/images/I/81xETRmcFwL._SL1500_.jpg" alt="Nome da série">
+                        <h3>LOKI</h3>
+                        <p class="genero">Drama, Comedia e Misterio <!-- ... --></p>
+                        <p class="descricao">
+                            Depois de roubar o Tesseract durante os eventos de Avengers: Endgame,
+                            uma versão alternativa de Loki é trazida para a misteriosa Autoridade de Variância Temporal (AVT),
+                            uma organização burocrática que existe fora do tempo e do espaço, e monitora a linha do tempo.<!-- descrição -->
+                        </p>
+                    </div>
+
+                    <!-- card 7-->
+                    <div class="card-serie">
+                        <img src=https://br.web.img3.acsta.net/c_310_420/pictures/22/11/30/19/53/5856320.jpg alt="Nome da série">
+                        <h3>The Last of Us</h3>
+                        <p class="genero">Suspense, Drama e Misterio <!-- ... --></p>
+                        <p class="descricao">
+                            A série The Last of Us é um drama pós-apocalíptico da HBO que se passa 
+                            nos EUA, 20 anos após um surto de um fungo mutante 
+                            (Cordyceps) que transforma humanos em criaturas canibais, devastando a civilização. <!-- descrição -->
+                        </p>
+                    </div>
+
+                    <!-- card 8-->
+                    <div class="card-serie">
+                        <img src=https://upload.wikimedia.org/wikipedia/en/1/14/The_Boys_Season_2.jpg alt="Nome da série">
+                        <h3>THE BOYS</h3>
+                        <p class="genero">violencia, policial <!-- ... --></p>
+                        <p class="descricao">
+                            The Boys fala sobre um mundo onde super-heróis são celebridades corrompidas e 
+                            manipuladas por uma mega corporação (Vought), e um grupo de vigilantes (Os Rapazes/The Boys) 
+                            luta para expor a verdade e controlar esses "heróis". <!-- descrição -->
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- TODO: opcional - pedir pra criarem mais 2 ou 3 cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="secao">
+        <div class="container">
+            <h2>Sobre o catálogo</h2>
+            <p>
+                Este projeto foi desenvolvido como um estudo prático de HTML e CSS, com o objetivo
+                 de praticar estruturação de dados e design. O site funciona como um catálogo organizado que reúne
+                 algumas séries, permitindo que eu exercite a criação de layouts modernos, o uso de sistemas de cores e a organização 
+                 de elementos visuais de forma pratica e criativa.
+                <!-- TODO: explicar em 1 ou 2 parágrafos o objetivo do site.
+                     Ex: projeto de estudo de HTML e CSS, recomendações pessoais, etc. -->
+            </p>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="secao secao-cinza">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Quer enviar sugestões de séries?</p>
+            <ul class="lista-contato">
+                <li><strong>Email: maratonaplay@hotmail.com</strong> <!-- TODO: email fictício ou real --></li>
+                <li><strong>Instagram: Maratonaplay</strong> <!-- TODO: @user ou link --></li>
+                <li><strong>site oficial: maratonaplay.com.br</strong> <!-- TODO: opcional --></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - <!-- TODO: nome do site ou do aluno -->. Maratonaplay.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
